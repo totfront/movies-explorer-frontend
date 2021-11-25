@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 18px 70px;
+
+  &__button {
+    cursor: pointer;
+
+    color: white;
+    border: none;
+    border-radius: 3px;
+    background-color: transparent;
+
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    &_green {
+      color: black;
+      background-color: #3ddc84;
+    }
+    &_padding {
+      padding: 8px 20px;
+      @media (max-width: 350px) {
+        padding: 5px 12px;
+      }
+    }
+    &_margin-left {
+      margin-left: 30px;
+      @media (max-width: 350px) {
+        margin-left: 14px;
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    padding: 18px 30px;
+  }
+
+  @media (max-width: 350px) {
+    padding: 18px 30px;
+  }
+}
