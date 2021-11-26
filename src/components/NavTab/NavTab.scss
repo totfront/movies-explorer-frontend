@@ -1,0 +1,53 @@
+.navtab {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+
+  transform: translateX(-50%);
+
+  &__item {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    &:not(:last-of-type) {
+      margin-right: 10px;
+      @media (max-width: 350px) {
+        margin-right: 6px;
+      }
+    }
+  }
+
+  &__button {
+    min-width: 96px;
+    padding: 10px;
+
+    cursor: pointer;
+
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background-color: #303030;
+
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    @media (max-width: 350px) {
+      min-width: 82px;
+      padding: 5px;
+
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  @media (max-width: 350px) {
+    bottom: 17px;
+  }
+}

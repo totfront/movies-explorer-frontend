@@ -1,0 +1,42 @@
+.promo {
+  position: relative;
+
+  padding: 0 20px 0;
+  &__inner {
+    padding: 160px 235px 217px;
+
+    border-radius: 10px;
+    background: #272727;
+    @media (max-width: 800px) {
+      padding: 350px 24px 380px;
+    }
+    @media (max-width: 350px) {
+      padding: 220px 0 255px;
+    }
+  }
+
+  &__heading {
+    text-align: center;
+
+    color: white;
+
+    font-size: 50px;
+    font-weight: normal;
+    line-height: 58px;
+    @media (max-width: 800px) {
+      font-size: 40px;
+      line-height: 52px;
+    }
+    @media (max-width: 350px) {
+      font-size: 29px;
+      line-height: 37px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    padding: 20px 20px 0;
+  }
+  @media (max-width: 350px) {
+    padding: 14px 14px 0;
+  }
+}
